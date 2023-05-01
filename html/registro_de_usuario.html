@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse como usuario</title>
+    <link rel="stylesheet" href="../css/tpe.css">
+</head>
+<body>
+    <header >
+        <div class="logo">
+            <h1>  <a class="link" href= "../html/index.html"> El recetario de la Nona </a> </h1>
+        </div>
+        <div class="btn_menu"> <a>Menu</a></div>
+        <div class="menu">
+            <ul class="navigation">
+                 <li> <a class="link" href="../html/nosotros.html">Nosotros</a> </li>
+                 <li> <a class="link" href="#contacto">Contacto </a> </li>
+                 <li> <a class="link" href="../html/registro_de_usuario.html" target="_blank"> Registrate como usuario </a>  </li>          
+            </ul>
+        </div>
+    </header>
+    <section class="registrio_de_usuario">
+        <div class="titulo">
+            <h2>Complete con sus datos (los que tienen (*) son obligatorios)</h2>
+        </div>
+        <div class="formulario">    
+            <form>
+                <h3>Nombre (*) </h3>
+                    <input type="text" name="nombre" id="#nombre" placeholder="Nombre" >
+                <h3>Apellido (*) </h3>
+                    <input type="text" name="apellido" id="#apellido" placeholder="Apellido">
+                <h3>Número telefónico (*) </h3>
+                    <input type="text" name="numero de telefono" id="#numeroTelefono" placeholder="Número de telefono">
+                <h3>Contraseña (*)</h3>
+                    <p>Como mínimo debe tener 8 caracteres</p>
+                    <input type="password" name="contraseña" id="#contraseña" placeholder="Ej: contraseña">
+            </form>
+            <div class="formCaptcha">
+                <div class="captcha">
+                    <p id="txtCaptcha"></p>
+                    <input type="text" id="inputCaptcha">
+                    <button id="btnCaptcha"> Generar captcha</button>
+                </div>
+            </div>
+            <p class="msjResultado" id="msjResCaptcha"></p>
+            <div class="enviar">
+                <input type="submit" name="captcha" id="enviarForm" value="Enviar">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <table id="contacto" >
+            <thead>
+                <tr>
+                    <td>Números de contacto</td>
+                    <td>Instagram</td>
+                    <td>Facebook</td>
+                    <td>Nos encontras en:</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <td>2494497079</td>
+                <td>@RecetarioDeLaNona</td>
+                <td>El Recetario de la Nona</td>
+                <td>Tandil, Buenos Aires</td>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>2494005335</td>
+                </tr>
+            </tfoot>
+        </table>
+    </footer>
+<script src="../js/menu.js"></script>
+<script src="../js/registro_de_usuario.js"></script>
+</body>
+</html>

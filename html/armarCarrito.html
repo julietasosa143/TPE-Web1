@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Hace tu propio carrito de compras!</title>
+    <link rel="stylesheet" href="../css/tpe.css">
+</head>
+<body>
+    <header >
+        <div class="logo">
+            <h1>  <a class="link" href= "../html/index.html"> El recetario de la Nona </a> </h1>
+        </div>
+        <div class="btn_menu"> <a>Menu</a></div>
+        <div class="menu">
+            <ul class="navigation">
+                 <li> <a class="link" href="../html/nosotros.html">Nosotros</a> </li>
+                 <li> <a class="link" href="#contacto">Contacto </a> </li>
+                 <li> <a class="link" href="../html/registro_de_usuario.html" target="_blank"> Registrate como usuario </a>  </li>          
+            </ul>
+        </div>
+    </header>   
+    <section class="armarCarrito">
+        <h2>¡Arma tu propio carrito de compras y consegui todo lo que necesitas para hacer nuestras recetas! </h2>
+            <h3>¡Si algun ingrediente no esta en nuestra lista, agregalo con el precio segun la cantidad y ayuda a otros usuarios a armar su carrito tambien!</h3>
+                <h4>Mostrar lista de ingredientes</h4>
+                <input type="button" value="Ver completa" id="btn_mostrarLista" class="btn">
+                <h4>Nuestra Lista de ingredientes</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Ingrediente:</td>
+                            <td>Cantidad:</td>
+                            <td>Precio en $:</td>
+                            <td>Id:</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody1">
+                        <tr>
+                            <td>Huevo</td>
+                            <td>3</td>
+                            <td>60</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Aceite de girasol</td>
+                            <td>40ml</td>
+                            <td>90</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+                <h4>Agrega tu propio ingrediente a nuestras listas</h4>
+                <input type="text" id="nombreIngNuevo" placeholder="Atun" required>
+                <input type="text" id="cantidadIngNuevo" placeholder="3 cucharadas" required>
+                <input type="text" id="precioIngrediente" placeholder="100" required>
+                <input type="button" value="Agregar Ingrediente" id="btn_agregarIng" class="btn">
+                <h4>Editar carrito con id del producto</h4>
+                <input type="number" id="idIngrediente" placeholder="Harina de almendras" required>
+                <input type="button" value="Agregar" id="btn_agregarAcarrito" class="btn">
+                <input type="button" value="Agregar item x3" id="btn_agregar3" class="btn">
+                <input type="button" value="Borrar carrito" id="btn_borrarCarrito" class="btn">
+                <h4>Tu carrito de compras</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Ingrediente:</td>
+                            <td>Cantidad:</td>
+                            <td>Precio en $:</td>
+                            <td>Id:</td>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbody2">
+
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+                
+                <form id="formulario">
+                    <h4>Para borrar o editar la lista</h4>
+                    <p>Ingrese los datos del item a cambiar</p>
+                    <input type="text" id="ingredienteaBorrar" placeholder="Huevo" required>
+                    <input type="text" id="cantidadIngAborrar" placeholder="3" required>
+                    <input type="text" id="precioIngAborrar" placeholder="30" required>
+                    <input type="number" id="idIngAborrar" placeholder="1" required>
+                    
+                    <input type="button" value="Borrar" id="btn_borrarIng" class="btn">
+                    <input type="button" value="Editar fila" id="btn_editarIng" class="btn">
+                </form>
+            
+    </section>
+    <footer>
+        <table id="contacto" >
+            <thead>
+                <tr>
+                    <td>Números de contacto</td>
+                    <td>Instagram</td>
+                    <td>Facebook</td>
+                    <td>Nos encontras en:</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <td>2494497079</td>
+                <td>@RecetarioDeLaNona</td>
+                <td>El Recetario de la Nona</td>
+                <td>Tandil, Buenos Aires</td>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>2494005335</td>
+                </tr>
+            </tfoot>
+        </table>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/armarCarrito.js"></script>
+
+</body>
+</html>
